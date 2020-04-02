@@ -6,8 +6,10 @@ class Triangle
     @c = c
   end
   def kind
-    if @a  > 0 && @b > 0 && @c > 0
-      if @a == @b && @a == @c && @b == @c
+    if  @a + @b < @c  || @a + @c < @b || @c + @b < @a || @a  == 0 || @b == 0 || @c == 0
+      raise TriangleError
+    else @a  > 0 && @b > 0 && @c > 0
+      elsif @a == @b && @a == @c && @b == @c
         :equilateral
       elsif @a == @b || @a == @c || @b == @c
         :isosceles
