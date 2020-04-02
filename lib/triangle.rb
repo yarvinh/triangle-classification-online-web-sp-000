@@ -6,10 +6,10 @@ class Triangle
     @c = c
   end
   def kind
-    if @a  > 0 && @b > 0 && @c > 0 
+    if @a  > 0 && @b > 0 && @c > 0
       if @a == @b && @a == @c && @b == @c
         :equilateral
-      elsif @a == @b || @a == @c || @b == @c
+      elsif && @b < @a && @b < @c && @a == @b || @a == @c || @b == @c
         :isosceles
       else :scalene
       end
