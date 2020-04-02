@@ -13,13 +13,18 @@ class Triangle
         :isosceles
       else :scalene
       end
+    else
+      if @a  == 0 || @b == 0 || @c == 0
+          raise PartnerError
+      end
+
     end
   end
 
 
   class TriangleError < StandardError
-    def message
-      
-    end
+    # def message
+    #
+    # end
   end
 end
