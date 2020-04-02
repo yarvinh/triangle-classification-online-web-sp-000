@@ -17,7 +17,7 @@ class Triangle
       # if @a  == 0 || @b == 0 || @c == 0
           raise TriangleError
         # else
-      end
+      # end
 
     end
   end
