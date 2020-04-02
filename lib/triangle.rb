@@ -9,7 +9,7 @@ class Triangle
     if @a  > 0 && @b > 0 && @c > 0
       if @a == @b && @a == @c && @b == @c
         :equilateral
-      elsif && @b < @a && @b < @c && @a == @b || @a == @c || @b == @c
+      elsif @b < @a && @b < @c && @a == @b || @a == @c || @b == @c
         :isosceles
       else :scalene
       end
